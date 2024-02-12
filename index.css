@@ -1,19 +1,26 @@
 * {
     border: 1px dashed peru;
 }
+:root {
+    --witflix-red: rgb(150, 7, 7);
+}
 body {
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h1 {
-    color: red;
+.logo {
+    display: flex;
+    width: 20%;
+
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(150, 24, 24);
+    border-bottom: 1px solid var(--witflix-red);
     height: 20vh;
+    background-color: rgb(250, 235, 215,0.3) ;
 }
 header nav, h1 {
 
@@ -31,7 +38,7 @@ header nav a {
 
 header nav a:hover {
 color: white;
-background: rgb(206, 13, 13);
+background: var(--witflix-red);
 }
 
 
@@ -60,10 +67,50 @@ header div input{
 
 main {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     border: 1px solid black;
     aspect-ratio: 5/3;
     height: 70vh;
     margin: 0;
+    background: rgb(210, 231, 185, 0.3);
+    width: 100%;
 }
+
+main h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+main div span{
+    margin: 0.3rem;
+    font-size: 0.9rem;
+}
+main p {
+    margin:0.5rem;
+    font-size: 0.8rem;
+}
+
+main div i {
+    color: var(--witflix-red);
+}
+
+.stars{
+    color: var(--witflix-red);
+}
+
+main button {
+    display: flex;
+    margin-top: 1rem;
+    width: 12%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    aspect-ratio: 10/3;
+    font:  1.2rem arial ;
+    color: white;
+    font-weight: bold;
+    background: var(--witflix-red); 
+
+}
+
