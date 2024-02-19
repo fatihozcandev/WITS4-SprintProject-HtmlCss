@@ -175,9 +175,14 @@ p {
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 20px 1rem;
   padding: 0;
+}
+
+footer span {
+  margin: 0 1rem;
+  font-weight: bold;
 }
 
 .terms {
@@ -188,17 +193,20 @@ footer {
 }
 
 .terms p {
-  margin: 0;
+  margin: 1rem 1rem;
 }
+
 .follow p {
   margin: 0;
   text-align: center;
   margin: 0.5rem;
+  font-weight: bold;
 }
 .social p {
   margin: 0;
   text-align: center;
   margin: 0.5rem;
+  font-weight: bold;
 }
 
 .follow img {
